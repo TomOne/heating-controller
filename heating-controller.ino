@@ -4,12 +4,12 @@
 int inputPins[] = {A0, A1, A2, A3};
 // TODO: try to avoid pins 3 and 11 as outputs because changing the PWM frequency
 // changes the duration of delay()
-int outputPins[] = {3, 5, 6, 9};
+int outputPins[] = {5, 10, 9, 6};
 int inputValue = 0;
 
 void setup()
 {
-  
+
   for (size_t i = 0; i < 4; i++)
   {
     // Set the PWM base frequency to ≈ 64 kHz / ≈ 31 kHz to avoid
